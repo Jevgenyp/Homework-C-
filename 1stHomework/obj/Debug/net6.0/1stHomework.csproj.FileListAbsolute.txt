@@ -1,0 +1,15 @@
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\1stHomework.csproj.AssemblyReference.cache
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\1stHomework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\1stHomework.AssemblyInfoInputs.cache
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\1stHomework.AssemblyInfo.cs
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\1stHomework.csproj.CoreCompileInputs.cache
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\bin\Debug\net6.0\1stHomework.exe
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\bin\Debug\net6.0\1stHomework.deps.json
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\bin\Debug\net6.0\1stHomework.runtimeconfig.json
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\bin\Debug\net6.0\1stHomework.dll
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\bin\Debug\net6.0\1stHomework.pdb
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\1stHomework.dll
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\refint\1stHomework.dll
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\1stHomework.pdb
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\1stHomework.genruntimeconfig.cache
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\1stHomework\obj\Debug\net6.0\ref\1stHomework.dll

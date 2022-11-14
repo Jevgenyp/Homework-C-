@@ -1,0 +1,15 @@
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\4thHomework.csproj.AssemblyReference.cache
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\4thHomework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\4thHomework.AssemblyInfoInputs.cache
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\4thHomework.AssemblyInfo.cs
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\4thHomework.csproj.CoreCompileInputs.cache
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\bin\Debug\net6.0\4thHomework.exe
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\bin\Debug\net6.0\4thHomework.deps.json
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\bin\Debug\net6.0\4thHomework.runtimeconfig.json
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\bin\Debug\net6.0\4thHomework.dll
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\bin\Debug\net6.0\4thHomework.pdb
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\4thHomework.dll
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\refint\4thHomework.dll
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\4thHomework.pdb
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\4thHomework.genruntimeconfig.cache
+C:\Users\Jev\Desktop\GeekBrains\C#\Homework\4thHomework\obj\Debug\net6.0\ref\4thHomework.dll
