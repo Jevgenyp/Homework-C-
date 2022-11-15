@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\5thHomework\\5thHomework.csproj": {}
+    "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\Homework2ndLesson\\5thHomework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\5thHomework\\5thHomework.csproj": {
+    "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\Homework2ndLesson\\5thHomework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\5thHomework\\5thHomework.csproj",
+        "projectUniqueName": "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\Homework2ndLesson\\5thHomework.csproj",
         "projectName": "5thHomework",
-        "projectPath": "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\5thHomework\\5thHomework.csproj",
+        "projectPath": "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\Homework2ndLesson\\5thHomework.csproj",
         "packagesPath": "C:\\Users\\Jev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\5thHomework\\obj\\",
+        "outputPath": "C:\\Users\\Jev\\Desktop\\GeekBrains\\C#\\Homework\\Homework2ndLesson\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jev\\AppData\\Roaming\\NuGet\\NuGet.Config"

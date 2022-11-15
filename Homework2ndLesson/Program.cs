@@ -29,7 +29,7 @@
             Console.WriteLine("Enter your number");
             int number = Convert.ToInt32(Console.ReadLine());
             int i = 0;
-            int result = 0;
+            
 
             if (number < 100)
 
@@ -38,8 +38,8 @@
             }
             else if (number < 1000)
             {
-                result = number % 10;
-                Console.WriteLine("Here is your 3d diggit " + result);
+                number = number % 10;
+                Console.WriteLine("Here is your 3d diggit " + number);
             }
 
 
@@ -105,7 +105,7 @@
                 Console.WriteLine("You entered incorrect number, please try again!");
                 Zadacha15();
             }
-        }
+        } Zadacha13();
         
     }
     
