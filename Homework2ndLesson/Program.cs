@@ -30,7 +30,6 @@
             int number = Convert.ToInt32(Console.ReadLine());
             int i = 0;
             
-
             if (number < 100)
 
             {
@@ -41,25 +40,21 @@
                 number = number % 10;
                 Console.WriteLine("Here is your 3d diggit " + number);
             }
-
-
-            else
+                 else
             {
                 while (number > 1000)
-                {
-                    i = number % 10;
-                    number = number / 10;
-                    if (number < 1000)
                     {
-                        number = number % 10;
-                        Console.WriteLine("Here is your 3d diggit " + number);
+                    i = number % 10;
+                number = number / 10;
                     }
-
-                }
-
-
+                if (number < 1000)
+                    {
+                    number = number % 10;
+                Console.WriteLine("Here is your 3d diggit " + number);
+                    }
             }
         }
+       Zadacha13();
         
 
         /*Dopolniteljnoe reshenie!!!
@@ -105,7 +100,7 @@
                 Console.WriteLine("You entered incorrect number, please try again!");
                 Zadacha15();
             }
-        } Zadacha13();
+        } 
         
     }
     
