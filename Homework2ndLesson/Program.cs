@@ -29,7 +29,7 @@
             Console.WriteLine("Enter your number");
             int number = Convert.ToInt32(Console.ReadLine());
             int i = 0;
-            
+
             if (number < 100)
 
             {
@@ -91,7 +91,7 @@
                 Console.WriteLine("you can stay home, its sunday!");
             }
             
-            else if(number> 0 & number <= 5)
+            else if(number> 0 && number <= 5)
             {
                 Console.WriteLine("Its work day, today you need to go on work!");
             }
