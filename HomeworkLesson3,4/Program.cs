@@ -166,9 +166,23 @@ void Zadacha25()
     }
     Console.WriteLine("{0} ^ {1} = {2}", num, n, num_n);
     Console.ReadKey();
-    
+
 
 }
 
-
-Zadacha25();
+void Zadacha27()
+{
+    //Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+    Console.Write("Введите число   : ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    int a;
+    int sum = 0;
+    while (num > 0)
+    {
+        a = num % 10;
+        num = num / 10;
+        sum = sum + a;
+    }
+    Console.Write($" Сумма чисел = " + sum);
+}
+Zadacha27();
