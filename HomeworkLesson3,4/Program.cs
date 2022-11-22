@@ -183,6 +183,6 @@ void Zadacha27()
         num = num / 10;
         sum = sum + a;
     }
-    Console.Write($" Сумма чисел = " + sum);
+    Console.Write($" Сумма цифр в чиселе = " + sum);
 }
 Zadacha27();
