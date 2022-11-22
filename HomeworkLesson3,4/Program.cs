@@ -133,4 +133,23 @@ void Zadacha23()
         }
     }
 }
-Zadacha23();
+void Zadacha21()
+{
+    Console.Write("Введите AX1: ");
+    double X1 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Введите AY1: ");
+    double Y1 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Введите AZ1: ");
+    double Z1 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Введите BX2: ");
+    double X2 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Введите BY2: ");
+    double Y2 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Введите BZ2: ");
+    double Z2 = Convert.ToDouble(Console.ReadLine());
+
+    double distance = Math.Sqrt(Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2) + Math.Pow(Z1 - Z2, 2));
+
+    Console.WriteLine("Расстояние между точками в 3D пространстве  = {0}", Math.Round(distance, 2));
+
+}
