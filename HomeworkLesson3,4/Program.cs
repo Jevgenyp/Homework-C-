@@ -96,27 +96,21 @@ void Zadacha30()
 //Домашка
 void Zadacha19()
 {
-    /*   Console.WriteLine("Ведите пятизначное число");
-       int n = Convert.ToInt32(Console.ReadLine());
-       Console.Write(n % 10);
-        while ((n /= 10) != 0)
-       {
-          Console.Write(n % 10);
-       }
-     */
+    //Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
     Console.WriteLine("введите пятизначное число");
     int number = int.Parse(Console.ReadLine());
-    int pal = 0, num = number;
+    int palindr = 0, num = number;
     while (number > 0)
     {
-        pal = pal * 10 + number % 10; number /= 10;
+        palindr = palindr * 10 + number % 10; number /= 10;
     }
-    Console.WriteLine(num == pal ? "палиндром" : "не палиндром");
+    Console.WriteLine(num == palindr ? "палиндром" : "не палиндром");
 
 
 }
 void Zadacha23()
 {
+    //Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
     Console.WriteLine("введите число");
     int n = Convert.ToInt32(Console.ReadLine());
     for (int i = 1; i <= n; i++)
@@ -135,6 +129,7 @@ void Zadacha23()
 }
 void Zadacha21()
 {
+    //Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
     Console.Write("Введите AX1: ");
     double X1 = Convert.ToDouble(Console.ReadLine());
     Console.Write("Введите AY1: ");
@@ -156,6 +151,7 @@ void Zadacha21()
 
 void Zadacha25()
 {
+    //Используя определение степени числа, напишите цикл, который принимает на вход два натуральных числа (A и B) и возводит число A в степень B.
     //число, которое нужно возвести в степень
     Console.Write("Введите число   : ");
     int num = int.Parse(Console.ReadLine());
