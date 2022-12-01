@@ -47,7 +47,7 @@ void Zadacha38()
     ArrayMin(numbers);
     ArrayMax(numbers);
     DifMaxMinArray(numbers);
-   // double sum = ArrayMax(numbers) - ArrayMin (numbers);
+    // double sum = ArrayMax(numbers) - ArrayMin (numbers);
     //Console.WriteLine($"{ArrayMax} - {ArrayMin} = {sum}");
 
 }
@@ -56,16 +56,16 @@ void Zadacha41()
 {
     Console.WriteLine("Сколько чисел вы хотите ввести?");
     int size = Convert.ToInt32(Console.ReadLine());
-    int [] array = new int[size];
+    int[] array = new int[size];
     int count = 0;
-    for(int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
     {
         Console.WriteLine("Введите число!");
         int number = Convert.ToInt32(Console.ReadLine());
         number = array[i] + number;
-        if(number > 0)
+        if (number > 0)
         {
-            count = count +1;
+            count = count + 1;
         }
 
     }
@@ -76,7 +76,7 @@ void Zadacha43()
 //Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 //b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 {
-    
+
     Console.WriteLine("Введите точку B1");
     double b1 = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Введите точку K1");
@@ -85,7 +85,7 @@ void Zadacha43()
     double b2 = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Введите точку K2");
     double k2 = Convert.ToInt32(Console.ReadLine());
-    double x = (-b2 + b1)/(-k1 + k2);
+    double x = (-b2 + b1) / (-k1 + k2);
     double y = k2 * x + b2;
     Console.WriteLine($"Заданные прямые пересекутся в точке A, с координатами X: {x}, Y: {y}");
 }
@@ -189,7 +189,7 @@ void DifMaxMinArray(double[] numbers)
     int lenght = numbers.Length;
     double maxValue = numbers[0];
     double minValue = numbers[0];
-    
+
     for (int i = 1; i < numbers.Length; i++)
     {
         if (numbers[i] > maxValue)
@@ -204,12 +204,12 @@ void DifMaxMinArray(double[] numbers)
         {
             minValue = numbers[i];
         }
-       
+
     }
 
-    double sum = Math.Round((maxValue - minValue),2);
+    double sum = Math.Round((maxValue - minValue), 2);
     Console.WriteLine($"Разница между максимальным элементом {maxValue} и минимальным элементом {minValue}  составляет {sum}");
-}    
+}
 
 
 
