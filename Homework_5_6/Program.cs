@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks.Dataflow;
+﻿using System.Drawing;
+using System.Threading.Tasks.Dataflow;
 using System.Globalization;
 //Программа
 void Zadacha34()
@@ -50,7 +51,45 @@ void Zadacha38()
     //Console.WriteLine($"{ArrayMax} - {ArrayMin} = {sum}");
 
 }
+void Zadacha41()
+//Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+{
+    Console.WriteLine("Сколько чисел вы хотите ввести?");
+    int size = Convert.ToInt32(Console.ReadLine());
+    int [] array = new int[size];
+    int count = 0;
+    for(int i = 0; i < size; i++)
+    {
+        Console.WriteLine("Введите число!");
+        int number = Convert.ToInt32(Console.ReadLine());
+        number = array[i] + number;
+        if(number > 0)
+        {
+            count = count +1;
+        }
 
+    }
+    Console.WriteLine($"Пользователь ввел {count} чисел больше нуля.");
+}
+
+void Zadacha43()
+//Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+//b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+{
+    
+    Console.WriteLine("Введите точку B1");
+    double b1 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите точку K1");
+    double k1 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите точку B2");
+    double b2 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите точку K2");
+    double k2 = Convert.ToInt32(Console.ReadLine());
+    double x = (-b2 + b1)/(-k1 + k2);
+    double y = k2 * x + b2;
+    Console.WriteLine($"Заданные прямые пересекутся в точке A, с координатами X: {x}, Y: {y}");
+}
+Zadacha43();
 // Вспомогательные области.
 
 // Работа с Массивами.
@@ -171,6 +210,6 @@ void DifMaxMinArray(double[] numbers)
     double sum = Math.Round((maxValue - minValue),2);
     Console.WriteLine($"Разница между максимальным элементом {maxValue} и минимальным элементом {minValue}  составляет {sum}");
 }    
-    Zadacha38();
+
 
 
