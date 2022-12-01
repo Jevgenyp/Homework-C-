@@ -20,28 +20,42 @@ void Zadacha36()
     //Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов с нечётными индексами.
     //[3, 7, 23, 12] -> 19
     //[-4, -6, 89, 6] -> 0
-    
+
     int size = 4;
     int[] numbers = new int[size];
     int sum = 0;
     FillArray(numbers, -99, 100);
     PrintArray(numbers);
     int lenght = numbers.Length;
-    for (int i = 1; i < size; i+=2)
+    for (int i = 1; i < size; i += 2)
     {
         sum += numbers[i];
     }
-     Console.WriteLine("сумма = " + sum);
-    
+    Console.WriteLine("сумма = " + sum);
+
 
 }
 
-Zadacha36();
+void Zadacha38()
+{
+    //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+    //[3,21 7,04 22,93 -2,71 78,24] -> 80,95
+    int size = 4;
+    double[] numbers = new double[size];
+    FillArrayDouble(numbers);
+    ArrayMin(numbers);
+    ArrayMax(numbers);
+    DifMaxMinArray(numbers);
+   // double sum = ArrayMax(numbers) - ArrayMin (numbers);
+    //Console.WriteLine($"{ArrayMax} - {ArrayMin} = {sum}");
+
+}
 
 // Вспомогательные области.
 
 // Работа с Массивами.
 void FillArray(int[] numbers, int minValue, int maxValue)
+//массив с целыми числами.
 {
     Random rand = new Random();
     int lenght = numbers.Length;
@@ -52,6 +66,7 @@ void FillArray(int[] numbers, int minValue, int maxValue)
     }
 }
 void PrintArray(int[] numbers)
+//печать массива
 {
     int lenght = numbers.Length;
     Console.WriteLine("Текущий массив: ");
@@ -65,6 +80,7 @@ void PrintArray(int[] numbers)
 }
 
 void EvenNumber(int[] numbers)
+//Вычисления четных чисел массива.
 {
     int lenght = numbers.Length;
     int sum = 0;
@@ -79,8 +95,86 @@ void EvenNumber(int[] numbers)
     }
     Console.WriteLine("В массиве " + sum + " чётных числа!");
     Console.WriteLine("\n");
+}
 
+void FillArrayDouble(double[] numbers)
+//массив с вещественными числами числами.
+{
+    Random rand = new Random();
+    int lenght = numbers.Length;
+
+    for (int i = 0; i < lenght; i++)
+    {
+        numbers[i] = Math.Round(rand.NextDouble() * 10, 2);
+
+        Console.Write(numbers[i] + " ");
+    }
+    Console.WriteLine();
 
 }
+void ArrayMin(double[] numbers)
+{
+    //минимальный элемент массива
+    int lenght = numbers.Length;
+    double minValue = numbers[0];
+    for (int i = 1; i < numbers.Length; i++)
+    {
+        if (numbers[i] < minValue)
+        {
+            minValue = numbers[i];
+        }
+    }
+    Console.WriteLine("Минимальный Элемент массива: " + minValue);
+
+}
+
+void ArrayMax(double[] numbers)
+{
+    //максимальный элемент массива
+    int lenght = numbers.Length;
+    double maxValue = numbers[0];
+    for (int i = 1; i < numbers.Length; i++)
+    {
+        if (numbers[i] > maxValue)
+        {
+            maxValue = numbers[i];
+        }
+    }
+    Console.WriteLine("Максимальный элемент массива: " + maxValue);
+
+}
+void DifMaxMinArray(double[] numbers)
+{
+    //Находим разницу между минимальным элементом и максимальным элементом массива
+    //вещественные числа
+    int lenght = numbers.Length;
+    double maxValue = numbers[0];
+    double minValue = numbers[0];
+    
+    for (int i = 1; i < numbers.Length; i++)
+    {
+        if (numbers[i] > maxValue)
+        {
+            maxValue = numbers[i];
+        }
+    }
+
+    for (int i = 1; i < numbers.Length; i++)
+    {
+        if (numbers[i] < minValue)
+        {
+            minValue = numbers[i];
+        }
+        if(minValue < 0)
+        {
+            minValue = minValue * -1;
+        }
+
+    }
+
+    double sum = Math.Round((maxValue - minValue),2);
+    Console.WriteLine($"Разница между максимальным элементом {maxValue} и минимальным элементом {minValue}  составляет {sum}");
+}    
+    Zadacha38();
 
 
