@@ -165,11 +165,7 @@ void DifMaxMinArray(double[] numbers)
         {
             minValue = numbers[i];
         }
-        if(minValue < 0)
-        {
-            minValue = minValue * -1;
-        }
-
+       
     }
 
     double sum = Math.Round((maxValue - minValue),2);
