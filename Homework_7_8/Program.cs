@@ -21,7 +21,7 @@ internal class Program
         void Zadacha50()
         {
             //Задача 50. Напишите программу, которая на вход принимает индексы элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
-           
+
             int rows = 4;
             int columns = 4;
             int[,] array = new int[rows, columns];
@@ -33,7 +33,7 @@ internal class Program
             Console.WriteLine("Введите второй индекс элемента: B");
             int B = Convert.ToInt32(Console.ReadLine());
 
-            if (A >= rows && B >= columns)
+            if (A >= rows | B >= columns)
             {
                 Console.WriteLine("Таких индексов в этом массиве не существует!");
                 return;
@@ -44,7 +44,7 @@ internal class Program
                 for (int j = 0; j < columns; j++)
                 {
 
-                    if (i == A && j == B)
+                    if (i == B && j == A)
                     {
                         Console.WriteLine($"Значение элемента введенными вами индексов [{A},{B}] = {array[i, j]}");
                         return;
@@ -52,7 +52,66 @@ internal class Program
                 }
             }
         }
-        Zadacha50();
+
+        void Zadacha52()
+        {
+            //Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+            int rows = 4;
+            int columns = 4;
+            int[,] array = new int[rows, columns];
+            double[] sum = new double[rows];
+
+            FillArray(array, 0, 10);
+            PrintArray(array);
+
+            for (int i = 0; i < columns; i++)
+            {
+                for (int j = 0; j < rows; j++)
+                {
+                    sum[j] += array[i, j];
+                }
+            }
+            for (int j = 0; j < columns; j++)
+            {
+                Console.Write($"{(sum[j] / columns),1} ");
+            }
+        }
+
+        //8 Урок. Домашнее задание!
+        void Zadacha54()
+        {
+            //Задача 54. Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+            int rows = 4;
+            int columns = 4;
+            int[,] numbers = new int[rows, columns];
+
+
+            FillArray(numbers, 10, 100);
+            Console.WriteLine();
+            PrintArray(numbers);
+
+            for (int i = 0; i < numbers.GetLength(0); i++)
+            {
+                for (int j = 0; j < numbers.GetLength(1) - 1; j++)
+                {
+                    for (int k = 0; k < numbers.GetLength(1) - 1; k++)
+                    {
+                        if (numbers[i, k] < numbers[i, k + 1])
+                        {
+                            int temp = 0;
+                            temp = numbers[i, k];
+                            numbers[i, k] = numbers[i, k + 1];
+                            numbers[i, k + 1] = temp;
+                        }
+                    }
+                }
+            }
+            Console.WriteLine();
+            PrintArray(numbers);
+        }
+        Zadacha54();
+
+
     }
 
 
