@@ -151,6 +151,7 @@ internal class Program
             int columns = 4;
             int[,] array = new int[rows, columns];
             FillArraySpiral(array);
+            
             PrintArray(array);
         }
 
@@ -188,7 +189,8 @@ internal class Program
                 Console.Write($"{numbers[i, j]}\t");
             }
             Console.WriteLine();
-
+            Console.WriteLine();
+            
         }
     }
 
@@ -201,9 +203,11 @@ internal class Program
         for (int i = 0; i < lenght; i++)
         {
             Console.Write(numbers[i] + " ");
+            
         }
 
         Console.WriteLine("\n");
+        
     }
 
     static void FillArrayDouble(double[,] numbers)
@@ -250,37 +254,45 @@ internal class Program
     for (j = 0; j < spiralArray.GetLength(1); j++)
     {
         spiralArray[i, j] = num++;
+        
     }
+    
 
     for (i = i + 1; i < spiralArray.GetLength(0); i++)
     {
         spiralArray[i, j - 1] = num;
         num++;
     }
+    
+
 
     for (j = j - 2; j >= 0; j--)
     {
         spiralArray[i - 1, j] = num;
         num++;
     }
+    
 
     for (i = i - 2; i > 0; i--)
     {
         spiralArray[i, j + 1] = num;
         num++;
     }
+    
 
     for (j = 1; j < spiralArray.GetLength(0) - 1; j++)
     {
         spiralArray[i + 1, j] = num;
         num++;
     }
+    
 
     for (j = j - 1; j > 0; j--)
     {
         spiralArray[i + 2, j] = num;
         num++;
     }
+    
 
 
 }
