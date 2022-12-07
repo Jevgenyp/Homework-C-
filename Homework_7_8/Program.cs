@@ -29,11 +29,11 @@ internal class Program
             FillArray(array, 0, 10);
             PrintArray(array);
             Console.WriteLine("Введите первый индекс элемента: A");
-            int A = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите второй индекс элемента: B");
-            int B = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
 
-            if (A >= rows | B >= columns)
+            if (a >= rows | b >= columns)
             {
                 Console.WriteLine("Таких индексов в этом массиве не существует!");
                 return;
@@ -44,14 +44,16 @@ internal class Program
                 for (int j = 0; j < columns; j++)
                 {
 
-                    if (i == B && j == A)
+                    if (i == a && j == b)
                     {
-                        Console.WriteLine($"Значение элемента введенными вами индексов [{A},{B}] = {array[i, j]}");
+                        Console.WriteLine($"Значение элемента введенными вами индексов [{a},{b}] = {array[i, j]}");
                         return;
                     }
                 }
             }
         }
+
+
 
         void Zadacha52()
         {
@@ -59,21 +61,21 @@ internal class Program
             int rows = 4;
             int columns = 4;
             int[,] array = new int[rows, columns];
-            double[] sum = new double[rows];
+            double[] sum = new double[columns];
 
             FillArray(array, 0, 10);
             PrintArray(array);
 
-            for (int i = 0; i < columns; i++)
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < rows; j++)
+                for (int j = 0; j < columns; j++)
                 {
                     sum[j] += array[i, j];
                 }
             }
-            for (int j = 0; j < columns; j++)
+            for (int j = 0; j < rows; j++)
             {
-                Console.Write($"{(sum[j] / columns),1} ");
+                Console.Write($"{(sum[j] / rows),1}\t");
             }
         }
 
@@ -105,20 +107,44 @@ internal class Program
                         }
                     }
                 }
+                Console.WriteLine();
+                PrintArray(numbers);
             }
+        }
+
+
+        void Zadacha56()
+        {
+            //Задача 56. Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
+            int rows = 4;
+            int columns = 6;
+            int[,] numbers = new int[rows, columns];
+            
+            FillArray(numbers, -10, 100);
             Console.WriteLine();
             PrintArray(numbers);
-        }
-        Zadacha54();
 
+            int sum = 0;
+            int tempSum = 0;
+
+            int numberOfRow = -1;
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    tempSum += numbers[i, j];
+                }
+                if (tempSum < sum | sum == 0) { sum = tempSum; numberOfRow = i; }
+                tempSum = 0;
+            }
+
+            Console.WriteLine($"Строка с наименьшей суммой элемнтов: {numberOfRow}, сумма элементов равна {sum}");
+
+        }
+        Zadacha56();
 
     }
-
-
-
-
-
-
 
     //Вспомогательные методы
     static void FillArray(int[,] numbers, int minValue, int maxValue)
@@ -148,7 +174,6 @@ internal class Program
             for (int j = 0; j < columns; j++)
             {
                 Console.Write($"{numbers[i, j]}\t");
-
             }
             Console.WriteLine();
 
