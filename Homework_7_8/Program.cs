@@ -1,5 +1,7 @@
 ﻿
 
+using System.Dynamic;
+using System.Net.NetworkInformation;
 internal class Program
 {
     private static void Main(string[] args)
@@ -119,7 +121,7 @@ internal class Program
             int rows = 4;
             int columns = 6;
             int[,] numbers = new int[rows, columns];
-            
+
             FillArray(numbers, -10, 100);
             Console.WriteLine();
             PrintArray(numbers);
@@ -142,7 +144,16 @@ internal class Program
             Console.WriteLine($"Строка с наименьшей суммой элемнтов: {numberOfRow}, сумма элементов равна {sum}");
 
         }
-        Zadacha56();
+        void Zadacha58()
+        {
+            int rows = 4;
+            int columns = 4;
+            int[,] array = new int[rows, columns];
+            FillArraySpiral(array);
+            PrintArray(array);
+        }
+        
+        Zadacha58();
 
     }
 
@@ -226,5 +237,50 @@ internal class Program
             Console.WriteLine();
         }
     }
+
+    static void FillArraySpiral(int[,] spiralArray)
+{
+
+    int num = 1;
+    int i = 0;
+    int j = 0;
+
+    for (j = 0; j < spiralArray.GetLength(1); j++)
+    {
+        spiralArray[i, j] = num++;
+    }
+
+    for (i = i + 1; i < spiralArray.GetLength(0); i++)
+    {
+        spiralArray[i, j - 1] = num;
+        num++;
+    }
+
+    for (j = j - 2; j >= 0; j--)
+    {
+        spiralArray[i - 1, j] = num;
+        num++;
+    }
+
+    for (i = i - 2; i > 0; i--)
+    {
+        spiralArray[i, j + 1] = num;
+        num++;
+    }
+
+    for (j = 1; j < spiralArray.GetLength(0) - 1; j++)
+    {
+        spiralArray[i + 1, j] = num;
+        num++;
+    }
+
+    for (j = j - 1; j > 0; j--)
+    {
+        spiralArray[i + 2, j] = num;
+        num++;
+    }
+
+
+}
 
 }
