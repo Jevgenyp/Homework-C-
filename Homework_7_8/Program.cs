@@ -145,6 +145,7 @@ internal class Program
 
         }
         void Zadacha58()
+        //Задача 58. Заполните спирально массив 4 на 4 числами от 1 до 16.
         {
             int rows = 4;
             int columns = 4;
@@ -152,7 +153,7 @@ internal class Program
             FillArraySpiral(array);
             PrintArray(array);
         }
-        
+
         Zadacha58();
 
     }
@@ -239,6 +240,7 @@ internal class Program
     }
 
     static void FillArraySpiral(int[,] spiralArray)
+    //Заполните спирально массив
 {
 
     int num = 1;
