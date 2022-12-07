@@ -49,12 +49,12 @@ internal class Program
                     if (i == a && j == b)
                     {
                         Console.WriteLine($"Значение элемента введенными вами индексов [{a},{b}] = {array[i, j]}");
-                        
+
                     }
                 }
             }
         }
-        Zadacha50();
+       
 
 
 
@@ -155,8 +155,7 @@ internal class Program
 
             PrintArray(array);
         }
-
-        
+        Zadacha58();
 
     }
 
@@ -258,14 +257,11 @@ internal class Program
 
         }
 
-
         for (i = i + 1; i < spiralArray.GetLength(0); i++)
         {
             spiralArray[i, j - 1] = num;
             num++;
         }
-
-
 
         for (j = j - 2; j >= 0; j--)
         {
@@ -273,13 +269,11 @@ internal class Program
             num++;
         }
 
-
         for (i = i - 2; i > 0; i--)
         {
             spiralArray[i, j + 1] = num;
             num++;
         }
-
 
         for (j = 1; j < spiralArray.GetLength(0) - 1; j++)
         {
@@ -287,14 +281,11 @@ internal class Program
             num++;
         }
 
-
         for (j = j - 1; j > 0; j--)
         {
             spiralArray[i + 2, j] = num;
             num++;
         }
-
-
 
     }
 
