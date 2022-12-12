@@ -14,10 +14,6 @@ internal class Program
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             Recursion64(m, n);
-
-
-
-
         }
 
 
@@ -34,7 +30,6 @@ internal class Program
             }
             M++;
             Recursion64(M, N);
-
         }
 
         void Zadacha66()
@@ -49,8 +44,8 @@ internal class Program
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             Recursion66(m, n);
-
         }
+
         void Recursion66(int m, int n, int sum = 0)
         {
 
@@ -66,6 +61,7 @@ internal class Program
             m++;
             Recursion66(m, n, sum);
         }
+        
         void Zadacha68()
         {
             //Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
@@ -77,7 +73,7 @@ internal class Program
             if (m < 0 || n < 0)
             {
                 Console.WriteLine("Ввведены отрицательные числа");
-            }    
+            }
             else Console.WriteLine($"А({m}, {n}) = {Recursion68(m, n)}");
         }
 
